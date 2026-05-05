@@ -17,8 +17,8 @@ contract StakingApp is Ownable, ReentrancyGuard, Pausable {
     using SafeERC20 for IERC20;
 
     // State variables
-    address public stakingToken; 
-    uint256 public stakingPeriod;   
+    address public stakingToken;
+    uint256 public stakingPeriod;
     uint256 public fixedStakingAmount;
     uint256 public rewardPerPeriod;
     mapping(address => uint256) public userBalance;
@@ -39,10 +39,10 @@ contract StakingApp is Ownable, ReentrancyGuard, Pausable {
      * @param rewardPerPeriod_ ETH reward amount per period
      */
     constructor(
-        address stakingToken_, 
-        address owner_, 
-        uint256 stakingPeriod_, 
-        uint256 stakingAmount_, 
+        address stakingToken_,
+        address owner_,
+        uint256 stakingPeriod_,
+        uint256 stakingAmount_,
         uint256 rewardPerPeriod_
     ) Ownable(owner_) {
         stakingToken = stakingToken_;

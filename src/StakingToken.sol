@@ -10,7 +10,6 @@ import {ERC20} from "../lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.s
  * @dev Public mint function - FOR TESTING ONLY
  */
 contract StakingToken is ERC20 {
-    
     /**
      * @notice Constructor
      * @param name_ Token name
